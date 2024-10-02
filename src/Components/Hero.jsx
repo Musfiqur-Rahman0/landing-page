@@ -32,7 +32,7 @@ const Hero = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1, delay: 0.3 }}
-      className="w-full h-auto sm:flex sm:flex-row flex-row-reverse   bg-orange-50 rounded-lg sm:py-10"
+      className="w-full h-auto flex sm:flex-row flex-row-reverse   bg-orange-50 rounded-lg sm:py-10"
     >
       {/* left section */}
       <motion.div

@@ -58,7 +58,10 @@ const Services = () => {
         </motion.h1>
       </div>
 
-      <motion.div variants={menuVariants} className="grid grid-cols-4 gap-3">
+      <motion.div
+        variants={menuVariants}
+        className="grid grid-cols-2 sm:grid-cols-4 gap-3"
+      >
         {services.map((service, index) => {
           const Icon = service.icon;
           return (
@@ -69,13 +72,13 @@ const Services = () => {
                 scale: 1.05,
                 boxShadow: "0px 10px 30px rgba(0, 0, 0, 0.1)",
               }}
-              className="sm:h-[200px] sm:w-auto sm:p-4 border rounded-lg relative"
+              className="sm:h-[200px] h-auto w-auto sm:w-auto p-4 border rounded-lg relative"
             >
               <motion.div
                 initial={{ scale: 1, rotate: 0 }}
                 whileHover={{ scale: 1.05, rotate: 360 }}
-                transition={{ duration: 0.4 }}
-                className="sm:h-10 sm:w-10 flex items-center justify-center rounded-md"
+                transition={{ duration: 0.3 }}
+                className="sm:h-10 sm:w-10 h-8 w-8 flex items-center justify-center rounded-md"
                 style={{ background: BgColors[index] }}
               >
                 <Icon style={{ color: TextColors[index] }} size={24} />
@@ -86,7 +89,7 @@ const Services = () => {
               </h2>
               <motion.button
                 whileTap={{ scale: 0.9 }}
-                className="absolute bottom-4 flex w-full items-center gap-3 text-orange-400"
+                className="absolute bottom-2 sm:bottom-4 flex w-full items-center gap-3 text-orange-400 "
               >
                 Learn more
                 <FaAngleRight size={14} />
