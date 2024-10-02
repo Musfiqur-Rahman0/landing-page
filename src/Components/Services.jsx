@@ -60,7 +60,7 @@ const Services = () => {
 
       <motion.div
         variants={menuVariants}
-        className="grid grid-cols-2 sm:grid-cols-4 gap-3"
+        className="grid grid-cols-2   lg:grid-cols-4 gap-3"
       >
         {services.map((service, index) => {
           const Icon = service.icon;
@@ -89,7 +89,7 @@ const Services = () => {
               </h2>
               <motion.button
                 whileTap={{ scale: 0.9 }}
-                className="absolute bottom-2 sm:bottom-4 flex w-full items-center gap-3 text-orange-400 "
+                className="absolute bottom-2  flex w-full items-center gap-3 text-orange-400 "
               >
                 Learn more
                 <FaAngleRight size={14} />
